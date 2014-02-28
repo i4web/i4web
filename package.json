@@ -1,14 +1,14 @@
 {
-  "name": "roots",
-  "version": "6.5.2",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "http://roots.io",
+  "name": "i4Web",
+  "version": "1.0.0",
+  "author": "Jonathan Rivera <jrivera@i-4web.com>",
+  "homepage": "http://www.i-4web.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/roots.git"
+    "url": "git://github.com/jrivera84/i4Web-wp"
   },
   "bugs": {
-    "url" : "https://github.com/roots/roots/issues"
+    "url" : ""
   },
   "licenses": [{
     "type": "MIT",
