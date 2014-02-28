@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           // To enable, set sourceMap to true and update sourceMapRootpath based on your install
           sourceMap: false,
           sourceMapFilename: 'assets/css/main.min.css.map',
-          sourceMapRootpath: '/app/themes/roots/'
+          sourceMapRootpath: '/app/themes/i4web/'
         }
       }
     },
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         options: {
           // JS source map: to enable, uncomment the lines below and update sourceMappingURL based on your install
           // sourceMap: 'assets/js/scripts.min.js.map',
-          // sourceMappingURL: '/app/themes/roots/assets/js/scripts.min.js.map'
+          // sourceMappingURL: '/app/themes/i4web/assets/js/scripts.min.js.map'
         }
       }
     },
@@ -60,9 +60,9 @@ module.exports = function(grunt) {
       options: {
         file: 'lib/scripts.php',
         css: 'assets/css/main.min.css',
-        cssHandle: 'roots_main',
+        cssHandle: 'i4web_main',
         js: 'assets/js/scripts.min.js',
-        jsHandle: 'roots_scripts'
+        jsHandle: 'i4web_scripts'
       }
     },
     watch: {

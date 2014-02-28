@@ -2,7 +2,7 @@
 /**
  * Enable theme features
  */
-add_theme_support('root-relative-urls');    // Enable relative URLs
+//add_theme_support('root-relative-urls');    // Enable relative URLs
 add_theme_support('bootstrap-top-navbar');  // Enable Bootstrap's top navbar
 add_theme_support('bootstrap-gallery');     // Enable Bootstrap's thumbnails component on [gallery]
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
@@ -17,8 +17,8 @@ define('POST_EXCERPT_LENGTH', 40); // Length in words for excerpt_length filter 
 /**
  * .main classes
  */
-function roots_main_class() {
-  if (roots_display_sidebar()) {
+function i4web_main_class() {
+  if (i4web_display_sidebar()) {
     // Classes on pages with the sidebar
     $class = 'col-sm-8';
   } else {
@@ -32,7 +32,7 @@ function roots_main_class() {
 /**
  * .sidebar classes
  */
-function roots_sidebar_class() {
+function i4web_sidebar_class() {
   return 'col-sm-4';
 }
 
@@ -41,8 +41,8 @@ function roots_sidebar_class() {
  *
  * See lib/sidebar.php for more details
  */
-function roots_display_sidebar() {
-  $sidebar_config = new Roots_Sidebar(
+function i4web_display_sidebar() {
+  $sidebar_config = new I4Web_Sidebar(
     /**
      * Conditional tag checks (http://codex.wordpress.org/Conditional_Tags)
      * Any of these conditional tags that return true won't show the sidebar
@@ -66,7 +66,7 @@ function roots_display_sidebar() {
     )
   );
 
-  return apply_filters('roots_display_sidebar', $sidebar_config->display);
+  return apply_filters('i4web_display_sidebar', $sidebar_config->display);
 }
 
 /**
